@@ -1,0 +1,94 @@
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Wed 04 Dec 2013 12:27:29 PM PST
+
+BeginCmp
+TimeStamp = /529D4B5F;
+Reference = C1;
+ValeurCmp = 0.1uF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /529EAABE;
+Reference = D1;
+ValeurCmp = DIODESCH;
+IdModule  = SM0603_Diode;
+EndCmp
+
+BeginCmp
+TimeStamp = /529D4883;
+Reference = P1;
+ValeurCmp = CONN_2;
+IdModule  = BLOCK_CONN_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /529D4D6D;
+Reference = P2;
+ValeurCmp = CONN_2;
+IdModule  = BLOCK_CONN_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /529D4B40;
+Reference = Q1;
+ValeurCmp = NPN;
+IdModule  = SOT23EBC;
+EndCmp
+
+BeginCmp
+TimeStamp = /529D3E31;
+Reference = R1;
+ValeurCmp = 23.2k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /529D46A6;
+Reference = R2;
+ValeurCmp = 976k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /529D4BD5;
+Reference = R3;
+ValeurCmp = 1k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /529D46DE;
+Reference = R4;
+ValeurCmp = 124k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /529D46B5;
+Reference = R5;
+ValeurCmp = 182k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /529D3DFF;
+Reference = RV1;
+ValeurCmp = 10k;
+IdModule  = POT_EVUE2J;
+EndCmp
+
+BeginCmp
+TimeStamp = /529D5079;
+Reference = SW1;
+ValeurCmp = SWITCH_INV;
+IdModule  = SLIDE_SWITCH;
+EndCmp
+
+BeginCmp
+TimeStamp = /529D3DDB;
+Reference = U1;
+ValeurCmp = LTC6992_TSOT_32_6;
+IdModule  = SOT23_6_CUSTOM;
+EndCmp
+
+EndListe

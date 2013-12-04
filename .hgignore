@@ -1,0 +1,7 @@
+syntax: glob
+*.000
+*.bak
+*cache.*
+*.*-bak
+*~
+$*
