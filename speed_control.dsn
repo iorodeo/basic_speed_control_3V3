@@ -246,8 +246,8 @@
     (net "N-000008"
       (pins RV1-2 U1-1)
     )
-    (class kicad_default "" "N-0000010" "N-000002" "N-000003" "N-000004" "N-000006"
-      "N-000007" "N-000008"
+    (class kicad_default "" "N-0000010" "N-000002" "N-000003" "N-000006" "N-000007"
+      "N-000008"
       (circuit
         (use_via Via[0-1]_889:635_um)
       )
@@ -256,7 +256,7 @@
         (clearance 254.1)
       )
     )
-    (class PWR +3.3V GND "N-000001"
+    (class PWR +3.3V GND "N-000001" "N-000004"
       (circuit
         (use_via Via[0-1]_889:635_um)
       )
