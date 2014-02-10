@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Wed 04 Dec 2013 12:27:29 PM PST
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Sun 09 Feb 2014 10:05:08 PM PST
 
 BeginCmp
 TimeStamp = /529D4B5F;
@@ -11,6 +11,13 @@ BeginCmp
 TimeStamp = /529EAABE;
 Reference = D1;
 ValeurCmp = DIODESCH;
+IdModule  = SM0603_Diode;
+EndCmp
+
+BeginCmp
+TimeStamp = /52F86C9E;
+Reference = D2;
+ValeurCmp = LED;
 IdModule  = SM0603_Diode;
 EndCmp
 
@@ -67,6 +74,13 @@ BeginCmp
 TimeStamp = /529D46B5;
 Reference = R5;
 ValeurCmp = 182k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /52F86CDB;
+Reference = R6;
+ValeurCmp = R;
 IdModule  = SM0603_Resistor;
 EndCmp
 

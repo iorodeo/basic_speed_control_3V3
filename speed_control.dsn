@@ -34,10 +34,11 @@
   )
   (placement
     (component SM0603_Capa
-      (place C1 46482 -41656 front 0 (PN 0.1uF))
+      (place C1 46228 -41656 front 0 (PN 0.1uF))
     )
     (component SM0603_Diode
       (place D1 51816 -36830 front 180 (PN DIODESCH))
+      (place D2 39878 -49530 front 0 (PN LED))
     )
     (component BLOCK_CONN_2X1
       (place P1 38100 -28956 front 0 (PN CONN_2))
@@ -47,11 +48,12 @@
       (place Q1 53594 -41910 front 90 (PN NPN))
     )
     (component SM0603_Resistor
-      (place R1 36830 -45974 front 180 (PN 23.2k))
-      (place R2 46482 -44704 front 0 (PN 976k))
-      (place R3 46482 -38608 front 180 (PN 1k))
-      (place R4 34036 -40132 front 90 (PN 124k))
-      (place R5 46482 -47752 front 0 (PN 182k))
+      (place R1 34290 -45720 front 180 (PN 23.2k))
+      (place R2 46228 -45720 front 0 (PN 976k))
+      (place R3 46228 -38608 front 180 (PN 1k))
+      (place R4 33528 -40386 front 90 (PN 124k))
+      (place R5 46228 -49530 front 180 (PN 182k))
+      (place R6 39878 -45720 front 180 (PN 36))
     )
     (component POT_EVUE2J
       (place RV1 34290 -57658 front 270 (PN 10k))
@@ -60,7 +62,7 @@
       (place SW1 52324 -58166 front 0 (PN SWITCH_INV))
     )
     (component SOT23_6_CUSTOM
-      (place U1 39370 -41148 front 270 (PN LTC6992_TSOT_32_6))
+      (place U1 39370 -40386 front 270 (PN LTC6992_TSOT_32_6))
     )
     (component MOUNT_HOLE_4_40
       (place M4 27940 -49530 front 0 (PN VAL**))
@@ -217,37 +219,40 @@
   )
   (network
     (net +3.3V
-      (pins C1-1 D1-2 P2-1 R1-1 R2-1 SW1-1 U1-5)
+      (pins C1-1 D1-2 P2-1 R1-1 R2-1 SW1-1 U1-5 D2-1)
     )
     (net GND
-      (pins C1-2 P1-1 Q1-1 R4-2 R5-2 RV1-3 SW1-3 U1-2)
+      (pins C1-2 P1-1 Q1-1 R4-2 R5-2 RV1-1 SW1-3 U1-2 R6-2)
     )
-    (net "N-000001"
-      (pins P1-2 SW1-2)
-    )
-    (net "N-0000010"
+    (net "N-0000011"
       (pins R2-2 R5-1 U1-4)
     )
     (net "N-000002"
-      (pins Q1-2 R3-1)
+      (pins P1-2 SW1-2)
     )
     (net "N-000003"
-      (pins R3-2 U1-6)
+      (pins Q1-2 R3-1)
     )
     (net "N-000004"
       (pins D1-1 P2-2 Q1-3)
     )
+    (net "N-000005"
+      (pins D2-2 R6-1)
+    )
     (net "N-000006"
-      (pins R4-1 U1-3)
-    )
-    (net "N-000007"
-      (pins R1-2 RV1-1)
-    )
-    (net "N-000008"
       (pins RV1-2 U1-1)
     )
-    (class kicad_default "" "N-0000010" "N-000002" "N-000003" "N-000006" "N-000007"
-      "N-000008"
+    (net "N-000007"
+      (pins R4-1 U1-3)
+    )
+    (net "N-000008"
+      (pins R1-2 RV1-3)
+    )
+    (net "N-000009"
+      (pins R3-2 U1-6)
+    )
+    (class kicad_default "" "N-0000011" "N-000002" "N-000003" "N-000005" "N-000006"
+      "N-000007" "N-000008" "N-000009"
       (circuit
         (use_via Via[0-1]_889:635_um)
       )
@@ -256,12 +261,12 @@
         (clearance 254.1)
       )
     )
-    (class PWR +3.3V GND "N-000001" "N-000004"
+    (class PWR +3.3V GND "N-000004"
       (circuit
         (use_via Via[0-1]_889:635_um)
       )
       (rule
-        (width 889)
+        (width 635)
         (clearance 254.1)
       )
     )
